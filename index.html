@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./src/sidebar.css" />
+    <script>
+      function sidebar_open() {
+        document.getElementById("sidebar-layout").style.display = "block";
+      }
+
+      function sidebar_close() {
+        document.getElementById("sidebar-layout").style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="layout">
+      <!-- Sidebar -->
+      <div id="sidebar-layout" style="display: none" id="sidebar">
+        <button onclick="sidebar_close()" class="button">닫기</button>
+        <div>
+          <div class="sidebar title">알쓸선잡</div>
+          <div>
+            <div>
+              <table class="linktable">
+                <tr>
+                  <td class="cell">1</td>
+                  <td class="second cell"><a href="#">내 투표소 찾기</a><br /></td>
+                  <td class="cell">0</td>
+                </tr>
+              </table><br>
+              <table class="linktable">
+                <tr>
+                  <td class="cell">2</td>
+                  <td class="second cell"><a href="#">후보자 정보 보기</a><br /></td>
+                  <td class="cell">0</td>
+                </tr>
+              </table><br>
+              <table class="linktable">
+                <tr>
+                  <td class="cell">3</td>
+                  <td class="second cell"><a href="#">후보자 공약 보기</a><br /></td>
+                  <td class="cell">0</td>
+                </tr>
+              </table><br>
+              <table class="linktable">
+                <tr>
+                  <td class="cell">4</td>
+                  <td class="second cell"><a href="#">국회의원 찾기</a><br /></td>
+                  <td class="cell">0</td>
+                </tr>
+              </table><br>
+              <table class="linktable">
+                <tr>
+                  <td class="cell">5</td>
+                  <td class="second cell"><a href="#">이전 선거 보기</a><br /></td>
+                  <td class="cell">0</td>
+                </tr>
+              </table><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page Content -->
+      <div>
+        <div id="body-content">
+          <div id="upper">
+            <div id="sidebar-button">
+              <button class="button"
+                style="font-size: 15pt"
+                onclick="sidebar_open()">
+                ☰
+              </button>
+            </div>
+            <div class="title">알쓸선잡</div>
+          </div>
+          <hr />
+          <div id="content">
+            <div id="search-layout">
+              <form action="get">
+                <input type="text" class="inputarea" placeholder="날짜">
+                <input type="text" class="inputarea" placeholder="사전투표 여부">
+                <input type="text" class="inputarea" placeholder="선거구 입력">
+                <input type="submit" value="     " class="inputarea search-button">
+              </form>
+            </div>
+            <div>
+              
+
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
 </html>
