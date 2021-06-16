@@ -28,7 +28,7 @@
                 <tr>
                   <td class="cell">1</td>
                   <td class="second cell"><a href="./PollPlace.html">내 투표소 찾기</a><br /></td>
-                  <td class="cell"> <img src="./src/stamp.png" alt="" style="width:28px;object-fit:cover"></td>
+                  <td class="cell"></td>
                 </tr>
               </table><br>
               <table class="linktable">
@@ -36,13 +36,12 @@
                   <td class="cell">2</td>
                   <td class="second cell"><a href="./CandInfo.html">후보자 정보 보기</a><br /></td>
                   <td class="cell"></td>
-                </tr>
               </table><br>
               <table class="linktable">
                 <tr>
                   <td class="cell">3</td>
                   <td class="second cell"><a href="./CandProm.html">후보자 공약 보기</a><br /></td>
-                  <td class="cell"></td>
+                  <td class="cell"><img src="./src/stamp.png" alt="" style="width:28px;object-fit:cover"></td>
                 </tr>
               </table><br>
               <table class="linktable">
@@ -80,14 +79,9 @@
           <div id="content">
             <div id="search-layout">
               <form action="PollPlace_do" method="GET" accept-charset="utf-8">
-                <input type="text" name="date" class="inputarea" placeholder="선거일자">
-                <input type="text" name="elecplace" class="inputarea" placeholder="선거구명">
                 
-                <input type="radio" name="pollinfo" value="pre" checked>
-                <label for="pre">사전투표</label>
-                <input type="radio" name="pollinfo" value="main">
-                <label for="main">본투표</label>
-                
+                <input type="text" name="name" class="inputarea" placeholder="후보자 이름">
+                <input type="text" name="partyName" class="inputarea" placeholder="정당명">
                 <input type="submit" value="     " class="inputarea search-button">
               </form>
             </div>
@@ -95,10 +89,10 @@
             <div id="search-result">
               <table>
                 <tr>
-                  <td>sgID</td>
-                  <td>evPsName(사전투표) / PsName(본투표)</td>
-                  <td>sdName + wiwName + emdName + placeName + floor</td>
-                  <td>address</td>
+                  <td>candName</td>
+                  <td>prmTitle</td>
+                  <td>prmCont</td>
+                  <td>상의필요</td>
                 </tr>
               </table>
 
