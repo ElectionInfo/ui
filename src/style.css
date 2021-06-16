@@ -132,3 +132,11 @@ td {
   border:none;
 }
 
+#maintitle{
+  font-size: 20pt;
+  padding-top: 6em;
+}
+
+.firstchar{
+  font-size: 50pt;
+}
