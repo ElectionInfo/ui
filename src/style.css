@@ -59,6 +59,22 @@ td {
   position: fixed;
   font-size: 15pt;
 }
+.sidebar-animate-left {
+  position: relative;
+  animation: animateleft 0.4s;
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 84px;
+    opacity: 1;
+  }
+}
+
+
 #upper {
   height: 150px;
 }

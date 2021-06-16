@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Main Page</title>
-    <link rel="stylesheet" href="./src/sidebar.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <script>
       function sidebar_open() {
         document.getElementById("sidebar-layout").style.display = "block";
@@ -18,7 +18,7 @@
   <body>
     <div id="layout">
       <!-- Sidebar -->
-      <div id="sidebar-layout" style="display: none" id="sidebar">
+      <div id="sidebar-layout" style="display: none" id="sidebar" class="sidebar-animate-left">
         <button onclick="sidebar_close()" class="button">닫기</button>
         <div>
           <div class="sidebar title">내 투표소 찾기</div>
