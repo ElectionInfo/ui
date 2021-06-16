@@ -19,6 +19,10 @@ body {
 }
 input:focus {outline:none;}
 
+td {
+  border: 1px solid #444444;
+}
+
 #sidebar-layout {
   height: 650px;
   width: 400px;
@@ -111,3 +115,4 @@ input:focus {outline:none;}
   background-repeat: no-repeat;
   border:none;
 }
+
